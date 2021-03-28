@@ -1,12 +1,16 @@
 import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/hero/Hero";
+import GlobalStyle from './gloabalStyle';
+
 function App() {
-  return (
-    <div className="App">
-    {/*<Navbar />*/}
-    <Hero />
-    </div>
-  );
+    return (
+        <>
+            <GlobalStyle/>
+            <Navbar/>
+            <Hero/>
+        </>
+
+    );
 }
 
 export default App;

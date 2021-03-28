@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import Img from '../assets/logo.svg';
-import { Link } from 'react-router-dom';
+import Img from '../../assets/logo.svg';
+import {Link} from 'react-router-dom';
 
 const NavbarContainer = styled.div`
   width: 100%;
@@ -66,6 +66,7 @@ const Input = styled.input`
   font-size: 12px;
   background: transparent;
   outline: none;
+
   &::placeholder {
     color: #d1d8de;
   }
@@ -94,7 +95,7 @@ const Navbar = () => {
     return (
         <NavbarContainer>
             <NavbarWrap>
-                <Logo />
+                <Logo/>
                 <Nav>
                     <NavLink to='/'>HOME</NavLink>
                     <NavLink to='/'>MARKET</NavLink>
@@ -105,15 +106,15 @@ const Navbar = () => {
                 </Nav>
                 <Search>
                     <SearchWrap>
-                        <Input type='text' placeholder='Symbol/Name' />
+                        <Input type='text' placeholder='Symbol/Name'/>
                     </SearchWrap>
                 </Search>
                 <ButtonContainer>
                     <Button
                         css={`
-              color: #037cff;
-              background: #fff;
-            `}
+                          color: #037cff;
+                          background: #fff;
+                        `}
                     >
                         SIGN UP
                     </Button>
